@@ -1,0 +1,116 @@
+{
+    "settings": {
+        "headerString": "<p>Formulaire d'inscription aux pôles du premier semestre.</p>",
+        "welcomeString": "<p>Bonjour <b>$name $surname ($group)</b>, merci de selectionner le pôle auquel vous voulez participer.</p>",
+        "subscriptionString": "<p>Vous êtes actuellement inscrit.e au pôle <b>$project</b>.</p>",
+        "validationString": "<p>Merci <b>$name $surname ($group)</b>, votre inscription au pôle <b>$project</b> est validée.</p>",
+        "dateLimit": "2020-10-08"
+    },
+    "projects": [
+        {
+            "title": "Le détail du monde",
+            "quota": 30,
+            "groups": [
+                {
+                    "name": "A1",
+                    "quota": 10
+                },
+                {
+                    "name": "A2",
+                    "quota": 10
+                }
+            ]
+        },
+        {
+            "title": "Vvvrrrooouuumm",
+            "quota": 30,
+            "groups": [
+                {
+                    "name": "A1",
+                    "quota": 10
+                },
+                {
+                    "name": "A2",
+                    "quota": 10
+                },
+                {
+                    "name": "A3",
+                    "quota": 10
+                }
+            ]
+        },
+        {
+            "title": "Radiode",
+            "quota": 30,
+            "groups": [
+                {
+                    "name": "A1",
+                    "quota": 10
+                },
+                {
+                    "name": "A2",
+                    "quota": 10
+                },
+                {
+                    "name": "A3",
+                    "quota": 10
+                }
+            ]
+        },
+        {
+            "title": "Walden",
+            "quota": 30,
+            "groups": [
+                {
+                    "name": "A1",
+                    "quota": 10
+                },
+                {
+                    "name": "A2",
+                    "quota": 10
+                },
+                {
+                    "name": "A3",
+                    "quota": 10
+                }
+            ]
+        }
+    ],
+    "participants": [
+        {
+            "surname": "Robert",
+            "name": "Bob",
+            "mail": "bob@bob.com",
+            "group": "A1",
+            "project": "Walden",
+            "comment": ""
+        },
+        {
+            "surname": "Le Castor",
+            "name": "Hector",
+            "group": "A3",
+            "mail": "hhh@lll.com",
+            "project": "Walden"
+        },
+        {
+            "surname": "Amote",
+            "name": "Berg",
+            "group": "A3",
+            "mail": "g.stagnaro@gmail.com",
+            "project": "Radiode",
+            "comment": ""
+        },
+        {
+            "surname": "Chirac",
+            "name": "Jaques",
+            "group": "A2",
+            "mail": "jc@chi.com"
+        },
+        {
+            "surname": "Waddle",
+            "name": "Criss",
+            "group": "A1",
+            "mail": "cr@wdl.com"
+        }
+    ]
+}

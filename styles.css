@@ -1,0 +1,273 @@
+html {
+	color: #333;
+  text-align: left;
+  line-height: 1.2em;
+  font-family: Gonfaron_Grotesk,"Helvetica Neue",Helvetica,Optima,sans-serif;
+
+  padding: 1em;
+  box-sizing: border-box;
+  font-size: 100%;
+  background-color: #fefefe;
+  font-weight: 400;                        
+}
+
+a {
+  color: darkgrey;
+  text-decoration: none;
+}
+a:visited{
+  color: darkgrey;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 48px 0;
+  width: 100%;
+  box-sizing: content-box;
+  height: 1px;
+  border: unset;
+  border-bottom: 0;
+  border-top: 0;
+  background-color: #222;
+  border-width:1px
+}
+
+b {
+  font-weight: 700;
+}
+
+.center {
+  width: 600px;
+  margin: 2em auto 1em auto;
+}
+
+.red {
+  color: darkred;
+}
+#pole-form {
+  width: 70%;
+  margin-top: 4em;
+  margin-right:auto;
+  margin-left:auto;
+  padding: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+}
+
+#pole-submit {
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	border : none;
+  background: #ccc;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: -10px;
+}
+
+#pole-submit:hover {
+    background: #B9CCB0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: -10px;
+  font-size: 1.5em;
+  height: 1.5em;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .checkmarkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: #B9CCB0;
+  }
+
+  .disabled {
+      color: lightgray;
+      cursor: not-allowed;
+      text-decoration: line-through;
+  }
+
+  .disabled:hover input ~ .checkmark {
+    background-color: #eee;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 8px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  .login {
+    width: 100%;
+    margin-bottom: var(--default-margin);
+    height: 30px;
+    border-bottom: 1px lightgrey;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    outline: none;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+  }
+
+  .comment {
+    width: 100%;
+    margin-bottom: var(--default-margin);
+    height: 30px;
+    border-bottom: 1px lightgrey;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    outline: none;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+  }
+  .mailinglist {
+    padding: 2em;
+    left:0;
+    width: 100%;
+  }
+
+  table {
+    table-layout:fixed;
+  }
+
+  th {
+    background-color: #fff;
+  }
+
+  tr:nth-child(even) { 
+    background-color: #eee; 
+  }
+
+  tr:nth-child(odd) { 
+    background-color: #ccc; 
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ccc;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ccc;
+  }
+
+  /* Style the checkmark/indicator */
+.container .checkmarkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+blockquote {
+  margin-left: 0.5em;
+  padding: 1em;
+  font-style: italic;
+  background-color: #eee;
+}
+@font-face {
+  font-family: Gonfaron_Grotesk;
+  src: url(gonfarongrotesk/gonfarongrotesk-regular.woff2) format("woff2"), url(gonfarongrotesk/gonfarongrotesk-regular.woff) format("woff");
+  font-style:normal
+}
+
+@font-face {
+  font-family: Gonfaron_Grotesk;
+  src: url(gonfarongrotesk/gonfarongrotesk-bold.woff2) format("woff2"), url(gonfarongrotesk/gonfarongrotesk-bold.woff) format("woff");
+  font-weight: 700;
+  font-style:normal
+}
+
+@font-face {
+  font-family: Gonfaron_Grotesk;
+  src: url(gonfarongrotesk/gonfarongrotesk-ExtraBold.woff2) format("woff2"), url(gonfarongrotesk/gonfarongrotesk-ExtraBold.woff) format("woff");
+  font-weight: 800;
+  font-style:normal
+}
+
+@font-face {
+  font-family: Gonfaron_Grotesk;
+  src: url(gonfarongrotesk/gonfarongrotesk-bolditalic.woff2) format("woff2"), url(gonfarongrotesk/gonfarongrotesk-bolditalic.woff) format("woff");
+  font-weight: 700;
+  font-style:italic
+}
+
+@font-face {
+  font-family: Gonfaron_Grotesk;
+  src: url(gonfarongrotesk/gonfarongrotesk-italic.woff2) format("woff2"), url(gonfarongrotesk/gonfarongrotesk-italic.woff) format("woff");
+  font-weight: 400;
+  font-style:italic
+}
