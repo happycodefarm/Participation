@@ -80,7 +80,7 @@
         {
             "surname": "Robert",
             "name": "Bob",
-            "mail": "bob@bob.com",
+            "mail": "bob@example.com",
             "group": "A1",
             "project": "Walden",
             "comment": ""
@@ -89,14 +89,14 @@
             "surname": "Le Castor",
             "name": "Hector",
             "group": "A3",
-            "mail": "hhh@lll.com",
+            "mail": "lch@example.com",
             "project": "Walden"
         },
         {
             "surname": "Amote",
             "name": "Berg",
             "group": "A3",
-            "mail": "g.stagnaro@gmail.com",
+            "mail": "berg@mo.te",
             "project": "Radiode",
             "comment": ""
         },
@@ -104,13 +104,13 @@
             "surname": "Chirac",
             "name": "Jaques",
             "group": "A2",
-            "mail": "jc@chi.com"
+            "mail": "jc@example.com"
         },
         {
-            "surname": "Waddle",
-            "name": "Criss",
+            "surname": "Jhon",
+            "name": "Doe",
             "group": "A1",
-            "mail": "cr@wdl.com"
+            "mail": "crw@example.com"
         }
     ]
 }
